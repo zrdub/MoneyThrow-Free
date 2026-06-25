@@ -1,5 +1,10 @@
 Money Throw System - Installation & Setup Guide
 📂 Folder Structure
+# 💸 Money Throw System - Installation & Setup Guide
+
+## 📂 Folder Structure
+
+```text
 MoneyThrow-Free
 │
 ├── ReplicatedStorage
@@ -13,8 +18,11 @@ MoneyThrow-Free
 ├── StarterGui
 │   └── MoneyGui
 │
-├── StarterPack
-│   └── MoneyTool
+└── StarterPack
+    └── MoneyTool
+```
+
+
 1. ReplicatedStorage
 
 Folder ini berisi RemoteEvent yang digunakan sebagai penghubung antara Client dan Server.
@@ -31,11 +39,13 @@ Sinkronisasi data uang.
 
 Jangan dipindahkan ke folder lain.
 
+
 Path:
 
+```text
 ReplicatedStorage
 └── MoneyEvent
-📌 ThrowMoneyEvent
+```
 
 RemoteEvent yang digunakan saat pemain melempar uang.
 
@@ -51,9 +61,11 @@ Spawn uang
 
 Path:
 
+```text
 ReplicatedStorage
 └── ThrowMoneyEvent
 2. ServerScriptService
+```
 
 Semua script server berada di sini.
 
@@ -72,8 +84,10 @@ mengirim update saldo
 
 Path:
 
+```text
 ServerScriptService
 └── MoneyServer
+```
 
 Jangan dipindahkan.
 
@@ -83,15 +97,20 @@ Script yang membuat Leaderstats pemain.
 
 Biasanya berisi:
 
+```text
 leaderstats
 └── Money
+```
 
 Script ini dijalankan ketika pemain join.
 
 Path:
 
+```text
 ServerScriptService
 └── MoneyStats
+```
+
 3. StarterGui
 
 Berisi seluruh tampilan GUI.
@@ -102,6 +121,7 @@ GUI utama.
 
 Biasanya berisi:
 
+```text
 MoneyGui
 │
 ├── Throw Button
@@ -112,6 +132,7 @@ MoneyGui
 │     ├── dst...
 │
 └── Money Display
+```
 
 Fungsinya:
 
@@ -121,8 +142,11 @@ menampilkan saldo
 
 Path:
 
+```text
 StarterGui
 └── MoneyGui
+```
+
 4. StarterPack
 📌 MoneyTool
 
@@ -137,6 +161,7 @@ Memanggil ThrowMoneyEvent
 
 Path:
 
+```text
 StarterPack
 └── MoneyTool
 Cara Kerja Sistem
@@ -164,10 +189,13 @@ MoneyServer
       ├── Kurangi Uang
       ├── Spawn Uang
       └── Update GUI
+```
+
 Dependency
 
 Pastikan seluruh objek berada di lokasi berikut:
 
+```text
 ReplicatedStorage
 ├── MoneyEvent
 └── ThrowMoneyEvent
@@ -181,8 +209,10 @@ StarterGui
 
 StarterPack
 └── MoneyTool
-Jangan Mengubah
+```
+## Jangan Mengubah!!!
 
+```text
 Agar sistem tetap berjalan normal, jangan:
 
 ❌ Mengganti nama MoneyEvent
@@ -193,8 +223,10 @@ Agar sistem tetap berjalan normal, jangan:
 ❌ Mengubah nama MoneyGui
 
 Karena script menggunakan nama dan lokasi tersebut untuk saling berkomunikasi.
+```
 
 Cara Instalasi
+```text
 Salin folder MoneyThrow-Free ke dalam game Roblox Studio.
 Pastikan seluruh isi folder berada pada service yang benar:
 MoneyEvent dan ThrowMoneyEvent → ReplicatedStorage
@@ -205,3 +237,4 @@ Jalankan game (Play atau Play Here) untuk memastikan tool muncul dan GUI berfung
 Equip MoneyTool, pilih nominal pada MoneyGui, lalu tekan tombol Throw untuk melempar uang.
 
 Dengan struktur di atas, sistem akan bekerja sesuai alur komunikasi Client ↔ Server yang telah disiapkan.
+```
