@@ -1,4 +1,4 @@
-Money Throw System - Installation & Setup Guide
+<img width="1420" height="839" alt="image" src="https://github.com/user-attachments/assets/459ef0b6-a31a-4b4c-83b5-609fe9573094" />Money Throw System - Installation & Setup Guide
 📂 Folder Structure
 # 💸 Money Throw System - Installation & Setup Guide
 
@@ -237,4 +237,10 @@ Jalankan game (Play atau Play Here) untuk memastikan tool muncul dan GUI berfung
 Equip MoneyTool, pilih nominal pada MoneyGui, lalu tekan tombol Throw untuk melempar uang.
 
 Dengan struktur di atas, sistem akan bekerja sesuai alur komunikasi Client ↔ Server yang telah disiapkan.
+```
+## Langkah Terakhir
+```text
+
+Masukkan Script UiSetting ke dalam Frame didalam MoneyGui
+
 ```
